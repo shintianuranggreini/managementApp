@@ -5,9 +5,13 @@ plugins {
 android {
     namespace = "com.example.managementapp"
     compileSdk {
-        version = release(36) {
+        version = release(37) {
             minorApiLevel = 1
         }
+        buildFeatures {
+            viewBinding = true
+        }
+
     }
 
     defaultConfig {

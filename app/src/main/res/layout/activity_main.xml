@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -25,8 +29,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tvshintianuranggreini"
-            android:text="Erling Haaland (Kelas XII RPL 5)"
+            android:id="@+id/tvNamaSiswa"
+            android:text="ShintiaNurAnggreini (Kelas XII RPL 5)"
             android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="#203486" />
@@ -64,7 +68,7 @@
                 android:text="3"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                android:textColor="#2D2A26"
+                android:textColor="#8A2C20"
                 android:layout_marginTop="4dp" />
 
         </LinearLayout>
@@ -83,7 +87,7 @@
                     android:layout_height="wrap_content"
                     android:text="Rata - Rata Nilai"
                     android:textSize="12sp"
-                    android:textColor="#636E72"/>
+                    android:textColor="#637266"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -92,11 +96,66 @@
                     android:text="88.5"
                     android:textSize="24sp"
                     android:textStyle="bold"
-                    android:textColor="#808894"
+                    android:textColor="#8BC34A"/>
 
         </LinearLayout>
 
     </LinearLayout>
+
+    <!--Banner Pengumuman dengan framelayout-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="24dp">
+
+        <!--Layer 1 : Background lapisan belakang-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0984E3"/>
+
+        <!--Layer 2 : Teks Pengumuman Lapisan depan-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PENGUMUMAN PENTING"
+                android:textSize="11sp"
+                android:textColor="#DFE6E9"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ujian Kompetensi RPL Dimulai hari Jumat ini"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+    <!--Tombol untuk ke halaman form-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TombolForm"
+        android:text="+ Tambah Tugas"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#0984E3"
+        android:layout_marginBottom="16dp"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+
+
     <!--Bagian Judul : Daftar Tugas Terbaru-->
     <TextView
         android:layout_width="wrap_content"
@@ -130,4 +189,4 @@
 
     </LinearLayout>
 </LinearLayout>
-
+</FrameLayout>
